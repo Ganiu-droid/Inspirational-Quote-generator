@@ -7,7 +7,7 @@ const generateQuote = async () => {
     try{
         let response = await fetch(url);
         let data = await response.json();
-        console.log(data)
+        //console.log(data)
         let randomIndex = Math.floor(Math.random() * data.length)
         let quote = data[randomIndex]
         const {text, author} = quote
